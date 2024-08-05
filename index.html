@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <input type="text" placeholder="Enter your Location" id="input-box">
+            <button id="search-btn"><img src="/assets/search_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="search"></button>
+        </div>
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!</h1>
+            <img src="/assets/404.png" alt="error">
+        </div>
+        <div class="weather-body">
+            <img src="/assets/cloud.png" alt="Weather image" class="weather-img">
+            <div class="weather-box">
+                <p class="temperature">0<sup>&deg;c</sup></p>
+                <p class="description">cloud</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity"><img src="/assets/humidity_high_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt="humidity-img">
+                    <div class="text">
+                        <span id="humidity-percent">0%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind"><img src="/assets/air_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="wind-img">
+                    <div class="text">
+                        <span id="wind-speed">0Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
